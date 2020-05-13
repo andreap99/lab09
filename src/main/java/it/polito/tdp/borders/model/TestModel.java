@@ -7,7 +7,20 @@ public class TestModel {
 		Model model = new Model();
 
 		System.out.println("TestModel -- TODO");
+		model.creaGrafo(2006);
 		
+		Country paese1 = new Country(910, "Papua New Guinea", "PNG");
+		Country paese2 = new Country(325, "Italia", "ITA");
+		//System.out.println(model.statiConfinanti(new Country(360, "Romania", "ROM")));
+		
+		//for(Country c : model.viciniBreadth(paese1))
+		//	System.out.println(c);
+		
+		//for(Country c : model.viciniDepth(paese1))
+			//System.out.println(c);
+		
+		for(Country c : model.viciniIterazione(paese1))
+			System.out.println(c);
 //		System.out.println("Creo il grafo relativo al 2000");
 //		model.createGraph(2000);
 		

@@ -13,5 +13,10 @@ public class TestDAO {
 
 		System.out.println("Lista di tutte le nazioni:");
 		List<Country> countries = dao.loadAllCountries();
+		
+		Country paese2 = new Country(325, "Italia", "ITA");
+		
+		for(Country b : dao.getConfinanti(paese2, 2006))
+			System.out.println(b.toString());
 	}
 }
